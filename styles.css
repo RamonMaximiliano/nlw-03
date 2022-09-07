@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+     background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%); 
+     height: 100vh;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-div {
+    max-width: 900px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.middle-text {
+    font-size: 45px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    word-wrap: normal;
+}
+
+.sub-title, .sub-middle-text {
+    font-size: 20px;
+    word-wrap: normal;
+}
+
+.logo {
+    width: 300px;
+    margin-top: 10px;
+}
+
+.next {
+    width: 100px;
+    height: 100px;
+    background-color: #ffd666;
+    margin: auto;
+    padding-top: 25px;
+    border-radius: 35%;
+    margin-top: 50px;
+    margin-bottom:30px;
+}
+
+.next img {
+    width: 50px;
+}
