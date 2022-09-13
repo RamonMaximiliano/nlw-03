@@ -52,6 +52,7 @@
     position:absolute;
     bottom:30px;
     right:30px;
+    cursor:pointer;
 }
 .plus:hover{
     transition: 0.1s;
