@@ -58,7 +58,6 @@
     background:#1b9fb9;
 } 
 
-
 @keyframes left-appear{
     from{
         transform: translateX(-100%)
@@ -67,7 +66,29 @@
     to{
         transform: translateX(0)
     }
-
-
 }
 
+@keyframes map-appear{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.main{
+    display:flex;
+}
+
+#map {
+    width: 100%;
+    max-height: 100vh;
+    position: relative;
+    outline: none;
+    background: #ddd;
+    overflow: hidden;
+    animation-delay: 200ms;
+    animation-name:map-appear;
+    animation-duration: 0.5s;
+}

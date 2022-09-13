@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orfanato</title>
-    <link rel="stylesheet" href="./styles/orphanages.css">
 
+    <link rel="stylesheet" href="./styles/orphanages.css">
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+     crossorigin=""></script>
 </head>
 <body>
-
+<div class="main
+">
     <aside class="aside">
         <img src="./images/logo-icon.png">
         <div>
@@ -17,18 +22,24 @@
         </div>
         <div class="middle-small-text">
             <p>Muitas crianças estão esperando sua visita :)</p>
-        </div>
+        </div> 
 
         <div class="sub-title">
             <p><strong>Rio do sul</strong></p>
             <p>Santa Catarina</p>
         </div>
     </aside>
+    <div id="map"  
+    class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+    tabindex="0"
+    ></div>
+
 <div class="plus">
     <img src="./images/plus.svg">
 </div>
+</div>
 
+    <script src="./script.js"></script>
 
-    
 </body>
 </html>
