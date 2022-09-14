@@ -113,7 +113,7 @@ body {
 
 
 .main-title, .sub-title {
-    max-width: 550px;
+    max-width: 500px;
     margin: auto;
     color: rgb(117, 117, 117);
     text-align: left;
@@ -127,12 +127,12 @@ body {
     padding-right: 5px;
     text-align: left;
     color: rgb(117, 117, 117);
-    max-width: 550px;
+    max-width: 500px;
     margin: auto;
 }
 
 .map-div {
-    max-width: 550px;
+    max-width: 500px;
     margin: auto;
     height: 350px;
     border-radius: 20px 20px 0px 0px;
@@ -142,7 +142,7 @@ body {
 }
 
 .map-button {
-    max-width: 550px;
+    max-width: 500px;
     min-height: 50px;
     margin: auto;
     background-color: #cbebf1;
@@ -162,7 +162,7 @@ body {
 }
 
 .row {
-    max-width: 95%;
+    max-width: 90%;
     margin: auto;
     margin-bottom: 10px;
 }
@@ -184,7 +184,7 @@ body {
 .card-div {
     display: flex;
     flex-wrap: wrap;
-    max-width: 550px;
+    max-width: 500px;
     margin: auto;
     margin-top: 50px;
     justify-content: space-between;
@@ -196,7 +196,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 90%;
+    max-width: 88%;
     min-height: 50px;
     margin: auto;
     text-align: center;

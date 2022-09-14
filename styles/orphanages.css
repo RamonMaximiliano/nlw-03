@@ -53,6 +53,7 @@
     bottom: 30px;
     right: 30px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .plus:hover {
@@ -94,4 +95,36 @@
     animation-delay: 200ms;
     animation-name: map-appear;
     animation-duration: 0.5s;
+    z-index: 0;
 }
+
+/* POP UP DO MAPA, CLASSES JÁ SÃO NATIVAS DA API CONFORME A DOC DA API */
+.leaflet-popup-content-wrapper{
+    background:white;
+    border-radius: 20px;
+}
+
+.leaflet-popup-content{
+   color:#29b6d1;
+   font-size: 18px;
+   font-weight: bold;
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.leaflet-popup-content a{
+   width:40px;
+   height: 40px;
+   background-color: #29b6d1;
+   border-radius: 5px;
+   display:flex;
+   transition: background-color 0.1s; 
+}
+.leaflet-popup-content a:hover{
+   background: #0e8aa3;
+}
+
+.leaflet-popup-tip{
+    display:none;
+}
+/* POP UP DO MAPA, CLASSES JÁ SÃO NATIVAS DA API CONFORME A DOC DA API */
