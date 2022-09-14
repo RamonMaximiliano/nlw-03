@@ -1,18 +1,22 @@
-var map = L.map('map').setView([51.505, -0.09], 15);
+let map = L.map('map').setView([-30.0275, -51.2278], 13);
 
-var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap'
 }).addTo(map);
 
-var marker = L.marker([51.5, -0.09]).addTo(map)
-    .bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
+let marker = L.marker([-30.0275, -51.2278]).addTo(map)
 
-var circle = L.circle([51.508, -0.11], {
+let circle = L.circle([-30.0275, -51.2278], {
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5,
     radius: 500
-}).addTo(map).bindPopup('I am a circle.');
+}).addTo(map)
+
+
+marker.bindPopup("Hello world! I am a popup").openPopup();
+circle.bindPopup("I am a circle");
 
 /*
 

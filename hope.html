@@ -19,7 +19,8 @@
 <body>
     <aside class="side-bar">
         <img class="logo-img" src="./images/logo-icon.png">
-        <div class="side-button">
+        <!-- history.back() - método nativo do JS para volta a pagina anterior seja ela qualquer -->
+        <div class="side-button" onclick="history.back()">
             <img class="back-button" src="./images/arrow-back.svg">
         </div>
     </aside>
@@ -27,15 +28,16 @@
     <div class="right-div">
         <h1 class="main-orf-title">Orfanato</h1>
         <div class="main-picture-div">
-            <img class="main-picture" src="./images/home.jpg">
+            <img class="main-picture" src="./images/items/house2.JPG">
         </div>
         <div class="small-picture-div">
-            <img class="small-picture" src="https://source.unsplash.com/random?id=1">
-            <img class="small-picture" src="https://source.unsplash.com/random?id=2">
-            <img class="small-picture" src="https://source.unsplash.com/random?id=3">
-            <img class="small-picture" src="https://source.unsplash.com/random?id=4">
-            <img class="small-picture" src="https://source.unsplash.com/random?id=5">
-            <img class="small-picture" src="https://source.unsplash.com/random?id=6">
+            <img class="small-picture active" src="./images/items/house2.JPG" alt="Loading" id="img1">
+            <img class="small-picture" src="./images/items/house7.JPG" alt="Loading" id="img2">
+            <img class="small-picture" src="./images/items/house8.JPG" alt="Loading" id="img3">
+            <img class="small-picture" src="./images/items/house5.JPG" alt="Loading" id="img4">
+            <img class="small-picture" src="./images/items/house6.JPG" alt="Loading" id="img5">
+            <img class="small-picture" src="./images/items/house9.JPG" alt="Loading" id="img6">
+
         </div>
 
         <h1 class="main-title">Orf. Esperança</h1>
@@ -46,8 +48,6 @@
         <div class="map-div" id="map">
         </div>
         <div class="map-button">Ver rotas no Google Maps</div>
-
-
 
         <hr class="row">
         <h1 class="sub-title">Instruções para visita</h1>
@@ -80,5 +80,4 @@
 <!-- 
     quando clica imagem pequena, alterar para a grande 
     icones no mapa
-    bloquear mover mapa 
 -->
