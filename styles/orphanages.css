@@ -41,45 +41,47 @@
     font-family: 'Nunito', sans-serif;
 }
 
-.plus{
+.plus {
     align-items: center;
     text-align: center;
     border-radius: 20px;
-    padding-top:18px; 
-    width:60px;
-    height:60px;
-    background:#29b6d1;
-    position:absolute;
-    bottom:30px;
-    right:30px;
-    cursor:pointer;
+    padding-top: 18px;
+    width: 60px;
+    height: 60px;
+    background: #29b6d1;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
 }
-.plus:hover{
-    transition: 0.1s;
-    background:#1b9fb9;
-} 
 
-@keyframes left-appear{
-    from{
+.plus:hover {
+    transition: 0.1s;
+    background: #1b9fb9;
+}
+
+@keyframes left-appear {
+    from {
         transform: translateX(-100%)
     }
-     
-    to{
+
+    to {
         transform: translateX(0)
     }
 }
 
-@keyframes map-appear{
-    from{
-        opacity:0;
+@keyframes map-appear {
+    from {
+        opacity: 0;
     }
-    to{
-        opacity:1;
+
+    to {
+        opacity: 1;
     }
 }
 
-.main{
-    display:flex;
+.main {
+    display: flex;
 }
 
 #map {
@@ -90,6 +92,6 @@
     background: #ddd;
     overflow: hidden;
     animation-delay: 200ms;
-    animation-name:map-appear;
+    animation-name: map-appear;
     animation-duration: 0.5s;
 }
