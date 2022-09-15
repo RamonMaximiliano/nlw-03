@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope</title>
+    <link rel="stylesheet" href="./styles/create-orphanage.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+</head>
+
+<body>
+    <aside class="side-bar">
+        <img class="logo-img" src="./images/logo-icon.png">
+        <!-- history.back() - método nativo do JS para volta a pagina anterior seja ela qualquer -->
+        <div class="side-button" onclick="history.back()">
+            <img class="back-button" src="./images/arrow-back.svg">
+        </div>
+    </aside>
+
+
+    <div class="right-area">
+        <div>
+            <h3 class="main-title">Adicione um orfanato</h3>
+        </div>
+        <div class="second-title">
+            <h1>Dados</h1>
+        </div>
+        <hr class="horiz-row"/>
+
+        <div class="map-div">
+            <div class="map"></div>
+            <div class="map-button">Clique no mapa para aidcionar a localização</div>
+        </div>
+
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" value="nome" id="nome">
+        </form>
+
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

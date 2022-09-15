@@ -10,6 +10,7 @@ body {
     background-color: rgb(226, 226, 226);
 }
 
+/*SIDE BAR START*/
 .side-bar {
     position: fixed;
     display: flex;
@@ -44,6 +45,8 @@ body {
 .back-button {
     width: 30px;
 }
+/*SIDE BAR END*/
+
 
 .right-div {
     background-color: white;

@@ -128,3 +128,21 @@
     display:none;
 }
 /* POP UP DO MAPA, CLASSES JÁ SÃO NATIVAS DA API CONFORME A DOC DA API */
+
+
+
+
+/* RESPONSIVITY*/
+/* 
+Só vai contar quando a max width for menor do que o valor informado
+*/
+@media (max-width: 760px){
+    .small-side{
+        width:190px;
+    }
+    .aside img {
+        max-width: 50%;
+    }
+}
+/* RESPONSIVITY*/
+
