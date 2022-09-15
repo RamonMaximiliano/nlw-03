@@ -242,7 +242,24 @@ body {
     cursor: pointer;
 }
 
+.submit-button {
+    width: 78%;
+    min-height: 50px;
+    margin-top: 30px;
+    background-color: rgb(91, 218, 91);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
 
+.submit-button:hover {
+    background-color: rgb(139, 228, 139);
+}
 
 
 
