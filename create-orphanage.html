@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hope</title>
+    <title>Create orphanage</title>
     <link rel="stylesheet" href="./styles/create-orphanage.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
         integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
@@ -34,15 +34,15 @@
         </div>
         <hr class="horiz-row" />
 
-        <div class="map-div">
-            <div class="map"></div>
+        <div class="map-div" >
+            <div class="map-board" id="map"></div>
             <div class="map-button">Clique no mapa para aidcionar a localização</div>
         </div>
 
-        <form>
+        <form action="">
             <div class="form-area">
                 <label for="nome" class="form-title">Nome</label>
-                <input type="text" id="nome" class="main-input">
+                <input type="text" id="nome" class="main-input" required>
             </div>
 
             <div class="form-area">
@@ -52,33 +52,28 @@
 
             <div class="form-area">
                 <label for="whats" class="form-title">Número de Whatsapp</label>
-                <input type="number" id="whats" class="main-input">
+                <input type="number" id="whats" class="main-input" required>
             </div>
 
             <div class="form-area">
                 <label for="file" class="form-title">Fotos</label>
                 <input type="text" id="file" placeholder="Cole o link da foto aqui" class="main-input">
-                <!--                 sumir com o input file e editar o label dele como um button
- --> <label for="fotos" class="add-photo"></label>
+                <!-- sumir com o input file e editar o label dele como um button -->
+                <label for="fotos" class="add-photo"></label>
                 <input type="file" id="fotos" class="picture-input">
             </div>
-
             <div class="second-title">
                 <h1>Visitação</h1>
             </div>
             <hr class="horiz-row" />
-
-
             <div class="form-area">
                 <label for="Instruções" class="form-title">Instruções</label>
                 <textarea type="text" id="Instruções" class="input-sobre"></textarea>
             </div>
-
             <div class="form-area">
                 <label for="visitas" class="form-title">Horário das visitas</label>
-                <input type="number" id="visitas" class="main-input">
+                <input type="number" id="visitas" class="main-input" required>
             </div>
-
             <div class="form-area">
                 <label for="yesno" class="form-title">Atende fim de semana?</label>
                 <div class="yesno">
@@ -86,11 +81,9 @@
                     <input type="button" id="no" value="Não" class="no-button">
                 </div>
             </div>
-
             <input type="submit" value="Confirmar" class="submit-button">
         </form>
     </div>
-
+    <script src="./scripts/create-script.js"></script>
 </body>
-
 </html>
